@@ -1,5 +1,7 @@
+import React from 'react';
 import "regenerator-runtime/runtime";
-import { store, renderGame } from "./Game";
+import { store } from "./store";
+import { render } from './App';
 
-renderGame();
-store.subscribe(renderGame);
+render();
+store.subscribe(render);

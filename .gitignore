@@ -2,3 +2,5 @@ node_modules
 dist
 coverage
 .lh
+/src/tmp
+storybook-static

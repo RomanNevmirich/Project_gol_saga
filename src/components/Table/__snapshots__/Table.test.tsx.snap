@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table component check Table render empty (?) 1`] = `
+<DocumentFragment>
+  <div
+    style="display: grid; grid-template-columns: repeat(0, 12px);"
+  />
+</DocumentFragment>
+`;
+
+exports[`Table component check Table render fill 1`] = `
+<DocumentFragment>
+  <div
+    style="display: grid; grid-template-columns: repeat(4, 12px);"
+  >
+    <div
+      class="sc-bczRLJ hcpULb"
+      value="0"
+    />
+    <div
+      class="sc-bczRLJ hcpULb"
+      value="0"
+    />
+    <div
+      class="sc-bczRLJ hcpULb"
+      value="0"
+    />
+    <div
+      class="sc-bczRLJ hcpULb"
+      value="0"
+    />
+    <div
+      class="sc-bczRLJ hcpULb"
+      value="0"
+    />
+    <div
+      class="sc-bczRLJ klZATh"
+      value="1"
+    />
+    <div
+      class="sc-bczRLJ klZATh"
+      value="1"
+    />
+    <div
+      class="sc-bczRLJ hcpULb"
+      value="0"
+    />
+    <div
+      class="sc-bczRLJ hcpULb"
+      value="0"
+    />
+    <div
+      class="sc-bczRLJ klZATh"
+      value="1"
+    />
+    <div
+      class="sc-bczRLJ klZATh"
+      value="1"
+    />
+    <div
+      class="sc-bczRLJ hcpULb"
+      value="0"
+    />
+    <div
+      class="sc-bczRLJ hcpULb"
+      value="0"
+    />
+    <div
+      class="sc-bczRLJ hcpULb"
+      value="0"
+    />
+    <div
+      class="sc-bczRLJ hcpULb"
+      value="0"
+    />
+    <div
+      class="sc-bczRLJ hcpULb"
+      value="0"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent, createEvent } from '@testing-library/react';
-import { Cell } from './cell';
+import { Cell } from './Cell';
 
 describe('Cell component check', () => {
   

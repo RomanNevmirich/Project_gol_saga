@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import React from "react";
+import React, { useMemo } from "react";
 
 const StyledCell = styled.div<{value: number}>`
     display: block;
@@ -21,4 +21,9 @@ export const Cell = ( value: cell ) => (
     <StyledCell value={value.value} ></StyledCell>
 );
 
-export default Cell;
+/*
+export const Cell = ( value: cell ) => useMemo(() => {
+    console.log(1);
+    return <StyledCell value={value.value} ></StyledCell>
+}, [value]);
+*/
