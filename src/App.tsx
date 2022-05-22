@@ -1,30 +1,28 @@
-import React, { FC, useCallback } from "react";
+import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { Provider } from "react-redux";
-import { store } from './store';
-import { GENERATE, START, STOP, CLEAR } from './game';
-import { Game } from './components/Game';
+import { Routes, Route, HashRouter } from "react-router-dom";
+import { Home } from './components/Home';
+import { About } from './components/About';
+import { Main } from './components/Main';
 
-const start = () => store.dispatch({ type: START });
-const stop = () => store.dispatch({ type: STOP });
-const clear = () => store.dispatch({ type: CLEAR });
-const generate = () => store.dispatch({ type: GENERATE });
-
-const App: FC = () => {
-    //const start = useCallback(() => store.dispatch({ type: START }), []);
-    return <Provider store={store}>
-        <Game {...store.getState()}
-            start={start}
-            stop={stop}
-            clear={clear}
-            generate={generate}
-        />
-    </Provider>
-};
+export const App = () => (
+    <React.StrictMode>
+        <HashRouter>
+            <div className="App">
+                <h2>Проект OTUS: реализация игры Game of Life</h2>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="about" element={<About />} />
+                    <Route path="game" element={<Main />} />
+                </Routes>
+            </div>
+        </HashRouter>
+    </React.StrictMode>
+);
 
 const rootElement: HTMLElement = document.getElementById('root') ?? document.createElement('');
 const root = createRoot(rootElement);
 
 export function render() {
-  root.render(<App/>);
+    root.render(<App/>);
 }

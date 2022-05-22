@@ -1,0 +1,22 @@
+body {
+  border: black;
+  border-radius: 0.3em;
+  border-style: solid;
+  border-width: thin;
+  width: 800px;
+  margin-bottom: 50px;
+  justify-content: center;
+  margin:0 auto;
+}
+
+.App {
+  width: 600px;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
