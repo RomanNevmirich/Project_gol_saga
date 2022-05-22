@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component check Button render 1`] = `
+<DocumentFragment>
+  <button
+    class="storybook-button storybook-button--small storybook-button--primary"
+    data-testid="test"
+    type="button"
+  >
+    button
+  </button>
+</DocumentFragment>
+`;

@@ -1,10 +1,10 @@
 import React from "react";
 import { Table, TableType } from '../Table';
-import { Button } from '../../stories/Button';
+import { Button } from '../Button';
 
 type ActionExecutor = () => void;
 
-type GameParams = {
+export type GameParams = {
   table: TableType,
   running: boolean,
   start: ActionExecutor,
@@ -16,9 +16,9 @@ type GameParams = {
 export const Game = (data: GameParams
 ) => (
   <div>
-    <Button label={data.running ? "Stop" : "Start"} onClick={data.running ? data.stop : data.start} primary size="small" />
-    <Button label="Clear" onClick={data.clear} primary size="small" />
-    <Button label="Generate" onClick={data.generate} primary size="small" />
+    <Button id='go' label={data.running ? 'Stop' : 'Start'} onClick={data.running ? data.stop : data.start} primary size='small' />
+    <Button id='clear' label='Clear' onClick={data.clear} primary size='small' />
+    <Button id='generate' label='Generate' onClick={data.generate} primary size='small' />
     <Table table={data.table} />
   </div>
 );

@@ -1,13 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Table component check Table render empty (?) 1`] = `
-<DocumentFragment>
-  <div
-    style="display: grid; grid-template-columns: repeat(0, 12px);"
-  />
-</DocumentFragment>
-`;
-
 exports[`Table component check Table render fill 1`] = `
 <DocumentFragment>
   <div

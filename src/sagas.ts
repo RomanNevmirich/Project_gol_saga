@@ -2,7 +2,7 @@ import { EventChannel, eventChannel, Task, Saga } from 'redux-saga';
 import { take, put, call, CallEffect, RaceEffect, ForkEffect, TakeEffect, SimpleEffect, fork, cancel, cancelled, race, CancelEffect } from "redux-saga/effects";
 import { timerMs, NEXT_GENERATION, START, STOP, CLEAR } from './game';
 
-function timer() {
+export function timer() {
     return eventChannel(emitter => {
         const iv = setInterval(() => {
             emitter(timerMs);
@@ -13,7 +13,7 @@ function timer() {
     });
 }
   
-function* timerSaga(): Generator<any> {
+export function* timerSaga(): Generator<any> {
     const chan: EventChannel<number> = (yield call(timer)) as EventChannel<number>;
     try {
         while (true) {

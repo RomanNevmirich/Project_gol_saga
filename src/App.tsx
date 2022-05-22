@@ -12,7 +12,6 @@ const generate = () => store.dispatch({ type: GENERATE });
 
 const App: FC = () => {
     //const start = useCallback(() => store.dispatch({ type: START }), []);
-    //console.log(1);
     return <Provider store={store}>
         <Game {...store.getState()}
             start={start}

@@ -1,9 +1,9 @@
 import { Action, combineReducers, Reducer } from 'redux';
 import { TableType } from './components/Table';
 
-export const timerMs = 10;
-const numRows = 50;
-const numColumns = 50;
+export const timerMs = 50;
+export const numRows = 50;
+export const numColumns = 50;
 const randomizer = 0.8;
 const nearOps = [
   [-1, -1],
@@ -16,7 +16,7 @@ const nearOps = [
   [1, 1]
 ]
 
-const generateTable = (empty: boolean): TableType => {
+export const generateTable = (empty: boolean): TableType => {
   const rows = [];
   for (let r = 0; r < numRows; r++) {
     rows.push(Array.from(Array(numColumns), () => empty ? 0 : Math.random() >= randomizer ? 1 : 0));
@@ -56,12 +56,12 @@ export const STOP = "STOP";
 export const NEXT_GENERATION = "NEXT_GENERATION";
 
 //Reducers
-const initialState = {
+export const initialState = {
   table: generateTable(false),
   running: false
 };
 
-const table: Reducer<TableType> = (state = initialState.table, action: Action) => {
+export const table: Reducer<TableType> = (state = initialState.table, action: Action) => {
   switch (action.type) {
     case GENERATE:
       return generateTable(false);
@@ -75,7 +75,7 @@ const table: Reducer<TableType> = (state = initialState.table, action: Action) =
 };
 
 //Running reducer
-const running: Reducer<boolean> = (state = initialState.running, action: Action) => {
+export const running: Reducer<boolean> = (state = initialState.running, action: Action) => {
   switch (action.type) {
     case CLEAR:
       return false;
