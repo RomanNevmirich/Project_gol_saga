@@ -8,21 +8,21 @@ exports[`Game component check suite render 1`] = `
       data-testid="go"
       type="button"
     >
-      Start
+      Запустить
     </button>
     <button
       class="storybook-button storybook-button--small storybook-button--primary"
       data-testid="clear"
       type="button"
     >
-      Clear
+      Очистить поле
     </button>
     <button
       class="storybook-button storybook-button--small storybook-button--primary"
       data-testid="generate"
       type="button"
     >
-      Generate
+      Сгенерировать
     </button>
     <div
       style="display: grid; grid-template-columns: repeat(2, 12px);"

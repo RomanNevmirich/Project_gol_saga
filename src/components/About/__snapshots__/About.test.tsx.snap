@@ -6,7 +6,7 @@ exports[`About component check About render 1`] = `
     <a
       href="#/"
     >
-      Home
+      Вернуться на главную
     </a>
   </nav>
   <main>
@@ -28,6 +28,13 @@ exports[`About component check About render 1`] = `
     <p>
       Игрок не принимает активного участия в игре. Он лишь расставляет или генерирует начальную конфигурацию «живых» клеток, которые затем изменяются согласно правилам. Несмотря на простоту правил, в игре может возникать огромное разнообразие форм.
     </p>
+    <a
+      href="https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D1%80%D0%B0_%C2%AB%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%C2%BB"
+      target="_blank"
+    >
+      Описание на Wiki
+    </a>
+    <p />
   </main>
 </DocumentFragment>
 `;

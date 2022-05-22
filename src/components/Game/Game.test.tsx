@@ -1,9 +1,6 @@
 import React from "react";
-import { Provider } from "react-redux";
-import { store } from "../../store";
 import { render, fireEvent, screen } from "@testing-library/react";
 import { Game, GameParams } from "./Game";
-import { Table, TableType } from '../Table';
 
 describe('Game component check suite', () => {
     const eventHandler = jest.fn();

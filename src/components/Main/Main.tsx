@@ -17,7 +17,7 @@ export const Main = () => {
     <Button id='home' label='Home' onClick={navigateTo} primary size='small' />*/
     return <>
         <nav>
-            <Link to="/">Home</Link>
+            <Link to="/">Вернуться на главную</Link>
             <p/>
         </nav>
         <Provider store={store}>
