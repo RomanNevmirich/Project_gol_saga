@@ -1,18 +1,9 @@
-import React from 'react';
-import { Main } from '../components/Main';
+import React from "react";
 
-export default function Index() {
+const App = () => {
   return (
-    <Main/>
-  )
-}
+    <div>Text1</div>
+  );
+};
 
-/*const Home = (): JSX.Element => {
-    return (
-      <div>
-        Hello, NextJS!
-      </div>
-    );
-  };
-  
-  export default Home;*/
+export default App;

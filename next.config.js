@@ -4,4 +4,5 @@ module.exports = {
         // ssr and displayName are configured by default
         styledComponents: true,
       },
+      basePath: "/Project_gol_saga",
 }

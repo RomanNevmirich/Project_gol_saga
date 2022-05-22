@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component check Home render 1`] = `
+<DocumentFragment>
+  <nav>
+    <a
+      href="#/about"
+    >
+      Game rules
+    </a>
+    <p />
+    <a
+      href="#/game"
+    >
+      Game
+    </a>
+  </nav>
+  <main>
+    <h3>
+      Project description
+    </h3>
+    <p>
+      text
+    </p>
+  </main>
+</DocumentFragment>
+`;

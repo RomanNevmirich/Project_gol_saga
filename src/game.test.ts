@@ -49,10 +49,10 @@ describe('game', () => {
     expect(check).toBeTruthy;
 
     check = running(true, {type: CLEAR});
-    expect(check).toBe(false);
+    expect(check).toBeFalsy;
 
     check = running(true, {type: STOP});
-    expect(check).toBe(false);
+    expect(check).toBeFalsy;
   });
 
 });

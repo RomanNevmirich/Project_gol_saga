@@ -57,7 +57,7 @@ export const NEXT_GENERATION = "NEXT_GENERATION";
 
 //Reducers
 export const initialState = {
-  table: generateTable(false),
+  table: generateTable(true),
   running: false
 };
 

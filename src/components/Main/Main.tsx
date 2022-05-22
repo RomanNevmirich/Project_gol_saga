@@ -5,10 +5,10 @@ import { GENERATE, START, STOP, CLEAR } from '../../game';
 import { Game } from '../Game';
 import { Link, useNavigate } from "react-router-dom";
 
-const start = () => store.dispatch({ type: START });
-const stop = () => store.dispatch({ type: STOP });
-const clear = () => store.dispatch({ type: CLEAR });
-const generate = () => store.dispatch({ type: GENERATE });
+export const start = () => store.dispatch({ type: START });
+export const stop = () => store.dispatch({ type: STOP });
+export const clear = () => store.dispatch({ type: CLEAR });
+export const generate = () => store.dispatch({ type: GENERATE });
 
 export const Main = () => {
     //const start = useCallback(() => store.dispatch({ type: START }), []);

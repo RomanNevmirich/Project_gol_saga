@@ -9,6 +9,10 @@
   ],
   "testRunner": "jest",
   "coverageAnalysis": "perTest",
-  "checkers": ["typescript"],
-  "tsconfigFile": "tsconfig.json"
+  "tsconfigFile": "tsconfig.json",
+  "mutate": [
+    "{src,lib}/**/*.ts?(x)",
+    "!{src,lib}/**/?(*.)+(spec|test|stories).ts?(x)",
+    "!{src,lib}/**/*+(Spec|Test|Stories).ts?(x)"
+  ]
 }
