@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 export const Home = () => (
       <>
         <nav>
-            <Link to="/about">Правила игры</Link>
+            <Link to="/about">Game rules</Link>
             <p/>
-            <Link to="/game">Игра</Link>
+            <Link to="/game">Game</Link>
         </nav>
         <main>
-            <h3>Описание проекта</h3>
+            <h3>Project description</h3>
             <p>
                 text
             </p>

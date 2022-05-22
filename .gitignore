@@ -4,3 +4,6 @@ coverage
 .lh
 /src/tmp
 storybook-static
+.next
+# stryker temp files
+.stryker-tmp
