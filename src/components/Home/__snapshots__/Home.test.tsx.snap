@@ -17,7 +17,7 @@ exports[`Home component check Home render 1`] = `
   </nav>
   <main>
     <h3>
-      Project description
+      Описание проекта
     </h3>
     <h4>
       Цель:

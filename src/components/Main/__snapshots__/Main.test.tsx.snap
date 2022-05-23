@@ -10,7 +10,6 @@ exports[`Main component check Main render 1`] = `
     </a>
     <p />
   </nav>
-  ;
   <div>
     <button
       class="storybook-button storybook-button--small storybook-button--primary"

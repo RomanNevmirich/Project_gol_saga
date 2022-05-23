@@ -19,7 +19,7 @@ export const Main = () => {
         <nav>
             <Link to="/">Вернуться на главную</Link>
             <p/>
-        </nav>;
+        </nav>
         <Provider store={store}>
             <Game {...store.getState()}
                 start={start}
