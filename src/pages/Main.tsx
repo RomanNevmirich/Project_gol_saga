@@ -1,8 +1,8 @@
 import React, { useCallback } from "react";
 import { Provider } from "react-redux";
-import { store } from '../../store';
-import { GENERATE, START, STOP, CLEAR } from '../../game';
-import { Game } from '../Game';
+import { store } from '../store';
+import { GENERATE, START, STOP, CLEAR } from '../game';
+import { Game } from '../components/Game';
 import { Link, useNavigate } from "react-router-dom";
 
 export const start = () => store.dispatch({ type: START });
@@ -16,10 +16,6 @@ export const Main = () => {
     const navigateTo = useCallback(() => navigate('/'), []);
     <Button id='home' label='Home' onClick={navigateTo} primary size='small' />*/
     return <>
-        <nav>
-            <Link to="/">Вернуться на главную</Link>
-            <p/>
-        </nav>;
         <Provider store={store}>
             <Game {...store.getState()}
                 start={start}

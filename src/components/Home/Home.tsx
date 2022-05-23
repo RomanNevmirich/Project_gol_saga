@@ -10,7 +10,7 @@ export const Home = () => (
             <Link to="/game">Перейти к игре</Link>
         </nav>
         <main>
-            <h3>Project description</h3>
+            <h3>Описание проекта</h3>
 
             <h4>Цель:</h4>
             <span>Реализовать готовое для продакшн приложение</span>

@@ -10,6 +10,8 @@
   "testRunner": "jest",
   "coverageAnalysis": "perTest",
   "tsconfigFile": "tsconfig.json",
+  "ignoreStatic": true,
+  "ignorePatterns": ["tmp", "pages", "stories"],
   "mutate": [
     "{src,lib}/**/*.ts?(x)",
     "!{src,lib}/**/?(*.)+(spec|test|stories).ts?(x)",
